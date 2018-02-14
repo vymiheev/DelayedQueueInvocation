@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'findbugs'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    compile 'junit:junit:5.0.1:', 'org.mockito:mockito-all:1.9.5:'
+}

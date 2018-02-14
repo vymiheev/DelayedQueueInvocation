@@ -1,0 +1,11 @@
+.out
+.idea/
+.gradle/
+.compile/
+build/
+out/
+build.log
+*.iml
+*.ipr
+*.iws
+*.log
