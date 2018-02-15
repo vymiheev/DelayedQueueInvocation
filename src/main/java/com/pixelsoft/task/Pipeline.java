@@ -12,7 +12,7 @@ import static java.util.concurrent.TimeUnit.NANOSECONDS;
 
 public class Pipeline {
     private static final int DEFAULT_CONSUMER_THREAD_COUNT = 20;
-    private final ReentrantLock lock = new ReentrantLock();
+    private final ReentrantLock lock = new ReentrantLock(true);
     private final PriorityQueue<DelayedTask> q = new PriorityQueue<>();
     private final Condition available = lock.newCondition();
     private ExecutorService executorService;
